@@ -5,234 +5,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhi Patel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#home"
-                    style="color: var(--primary-color); font-weight: 700; font-size: 1.5rem;">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home"
-                                style="color: var(--text-color); font-weight: 500;">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about"
-                                style="color: var(--text-color); font-weight: 500;">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects"
-                                style="color: var(--text-color); font-weight: 500;">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact"
-                                style="color: var(--text-color); font-weight: 500;">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Abhi Patel</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="https://drive.google.com/thumbnail?id=1-__BHF8qDIsS1iA5boELFhVdb5s8klAm&sz=w1000" alt="Profile"
-                class="hero-image fade-in">
-            <h1 class="fade-in delay-1">Abhi Patel</h1>
-            <!-- <h2 class="fade-in delay-1">Full Stack Developer</h2> -->
-            <p class="hero-text fade-in delay-2">
-                I create elegant, responsive, and user-friendly web applications with a focus on performance,
-                accessibility, and AI-powered intelligence that enhances user experience and functionality. My work also
-                explores AI research, including training efficient models and enabling intelligent computing on edge
-                devices.
-            </p>
-            <div class="fade-in delay-2">
-                <a href="#contact" class="cta-button">Get In Touch</a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Full Stack Developer
+                        <span class="hero-subtitle">& AI Enthusiast</span>
+                    </h1>
+                    <p class="hero-description">
+                        I create elegant, responsive, and user-friendly web applications with a focus on performance,
+                        accessibility, and AI-powered intelligence that enhances user experience and functionality.
+                    </p>
+                    <a href="#contact" class="cta-btn">Contact Me</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://drive.google.com/thumbnail?id=1fcaCrlWZaLaeiW29mpy7oWziQHaLhxR1&sz=w1000"
+                        alt="Abhi Patel" class="profile-image">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-heading">About</h2>
+            <div class="about-content">
+                <p class="about-text">
                     Hello! I'm Abhi, a passionate Full Stack Developer with expertise in creating responsive and
                     user-friendly web applications. I have a strong background in both front-end and back-end
                     technologies, allowing me to build complete solutions from the ground up.
                 </p>
-                <p>
+                <p class="about-text">
                     My journey in web development began 3 years ago, and I've been constantly learning and adapting to
                     new technologies since then. I believe in writing clean, maintainable code and creating intuitive
                     user experiences that solve real problems.
                 </p>
-                <p>
-                    When I'm not coding, you can find me hiking, reading about new tech trends, or experimenting with
-                    AI. I'm always open to new opportunities and challenges!
-                </p>
             </div>
-            <div>
-                <h3>My Skills</h3>
-                <div class="skills">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Express</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Responsive Design</span>
-                    <span class="skill-tag">RESTful APIs</span>
-                    <span class="skill-tag">Docker</span>
+
+            <div class="skills-section">
+                <h3 class="skills-heading">Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React.js</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Express</span>
+                    <span class="skill-badge">MongoDB</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">REST APIs</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://drive.google.com/thumbnail?id=1FPkPe6UlG2rffMMgCbPi2hxr_2tTEpkk&sz=w1000"
-                    alt="Project 1" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Docs2PPT</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Google Gemini</span>
-                        <span class="project-tag">Flask</span>
+
+    <!-- Projects Section -->
+    <section class="projects-preview">
+        <div class="container">
+            <h2 class="section-heading">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://drive.google.com/thumbnail?id=1FPkPe6UlG2rffMMgCbPi2hxr_2tTEpkk&sz=w1000"
+                            alt="Docs2PPT">
                     </div>
-                    <p class="project-description">
-                        A Platform that converts PDFs into PowerPoint presentations using the Google Gemini API.
-                        It allows users to upload their documents and receive a well-structured presentation in return.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://docs2ppt.onrender.com/" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/abhipatel2005/docs2ppt" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+                    <h3 class="project-name">Docs2PPT</h3>
+                    <p class="project-desc">A Platform that converts PDFs into PowerPoint presentations using Google
+                        Gemini API</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://drive.google.com/thumbnail?id=1KHledjR8p-isc3E76-kZQdrnX_A5z-eI&sz=w1000"
+                            alt="Terms Summarizer">
                     </div>
+                    <h3 class="project-name">Terms Summarizer</h3>
+                    <p class="project-desc">Browser extension that summarizes terms and conditions using AI</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://drive.google.com/thumbnail?id=1hjJMlf-AUc7fzrlRH5e0S2QpDKIgAFFc&sz=w1000"
+                            alt="Eveange">
+                    </div>
+                    <h3 class="project-name">Eveange</h3>
+                    <p class="project-desc">Complete event management platform with registration, tracking, and
+                        certificate distribution</p>
                 </div>
             </div>
-
-            <div class="project-card">
-                <img src="https://drive.google.com/thumbnail?id=1KHledjR8p-isc3E76-kZQdrnX_A5z-eI&sz=w1000"
-                    alt="Project 2" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Terms Summarizer(Extension)</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <!-- <span class="project-tag">MongoDB</span> -->
-                    </div>
-                    <p class="project-description">
-                        An Exntension that summarizes the terms and conditions of any website using AI.
-                        It provides a concise overview in form key points and concerns making it easier for users to
-                        understand the terms easily.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://microsoftedge.microsoft.com/addons/detail/terms-summarizer/lkhdepdmlpdikbcbpodoefbaedjfdjog"
-                            class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/abhipatel2005/terms_summarizer" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://drive.google.com/thumbnail?id=1lYvfSt-iDjZ0m4i4b-V8FmnLzVrH0LIy&sz=w1000"
-                    alt="Project 3" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Inventory Management System</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Bootstrap</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">NodeJS</span>
-                        <span class="project-tag">MongoDB</span>
-                    </div>
-                    <p class="project-description">
-                        Features include product management, stock status indicators ("Approved," "Pending"), search
-                        functionality, and inventory reports.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/abhipatel2005/ims" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
+            <div class="view-all-wrapper">
+                <a href="projects.html" class="view-all-btn">View All Projects →</a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class=" contact-item">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
                         <h3>Email</h3>
-                        <p><a href="mailto:patelabhideep02@gmail.com"
-                                style="color: inherit;">patelabhideep02@gmail.com</a>
-                        </p>
+                        <a href="mailto:patelabhideep02@gmail.com">patelabhideep02@gmail.com</a>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone contact-icon"></i>
-                    <div>
+
+                    <div class="contact-item">
                         <h3>Phone</h3>
-                        <p><a href="tel:+91-8320741851" style="color: inherit;">+91-8320741851</a></p>
+                        <a href="tel:+918320741851">+91-8320741851</a>
                     </div>
-                </div>
-                <div class=" contact-item">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <div>
+
+                    <div class="contact-item">
                         <h3>Location</h3>
-                        <p>Mehsana, IN</p>
+                        <p>Mehsana, India</p>
                     </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/abhipatel2005"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/abhipatel2005/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/abhi_patel404"><i class="fab fa-twitter"></i></a>
+
+                    <div class="contact-item">
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/abhipatel2005" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://www.linkedin.com/in/abhipatel2005/" target="_blank"
+                                rel="noopener">LinkedIn</a>
+                            <a href="https://x.com/abhi_patel404" target="_blank" rel="noopener">Twitter</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <button class="btn btn-dark position-fixed" id="darkModeToggle"
-        style="bottom: 20px; right: 20px; border-radius: 50%; width: 50px; height: 50px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-        <i class="fas fa-moon"></i>
-    </button>
-    <footer>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abhi Patel. All rights reserved.</p>
         </div>
-        <p class="copyright">© 2025 Abhi Patel. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
